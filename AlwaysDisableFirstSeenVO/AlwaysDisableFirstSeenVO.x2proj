@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>a9645b02-4d16-4c88-b7f4-77cf7816a20d</Guid>
+    <Name>AlwaysDisableFirstSeenVO</Name>
+    <Description>There is a built-in console command that disables first seen VO (narratives about enemy types that you meet for first time). This mod automates running it every time you start/load into a mission. Works also in TQL and skrimish.
+
+License: Apache 2.0</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>AlwaysDisableFirstSeenVO</AssemblyName>
+    <RootNamespace>AlwaysDisableFirstSeenVO</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\AlwaysDisableFirstSeenVO\" />
+    <Folder Include="Src\AlwaysDisableFirstSeenVO\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\AlwaysDisableFirstSeenVO\Classes\UISL_TacticalHUD.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
